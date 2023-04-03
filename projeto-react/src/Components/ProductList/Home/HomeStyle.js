@@ -1,8 +1,7 @@
 import styled from "styled-components"
 
 export const DivPrincipal = styled.main`
-background-color: red;
-width: 58vw;
+width: 53vw;
 margin-top: 20px;
 margin-right: 10px;
 `
@@ -14,18 +13,9 @@ margin: 0 10px 0 10px;`
 
 export const Container2 = styled.div`
 display: flex;
-background-color: white;
+flex-direction: row;
+flex-wrap: wrap;
 justify-content: flex-start;
 margin-left: 10px;
+margin-bottom: 10px;
 gap: 10px;`
-
-export const Produto = styled.div`
-border: 1px solid;
-`
-export const Img = styled.img`
-width: 250px;
-height: 250px;`
-
-export const Informacoes = styled.div`
-padding: 5px;
-`
