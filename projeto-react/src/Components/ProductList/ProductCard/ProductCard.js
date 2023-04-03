@@ -11,7 +11,9 @@ export function ProductCard(props) {
 				<Informacoes>
 					<p>{product.name}</p>
 					<p>R${product.value}</p>
+					<div>
 					<button>Adicionar ao Carrinho</button>
+					</div>
 				</Informacoes>
 			</Produto>
 			)

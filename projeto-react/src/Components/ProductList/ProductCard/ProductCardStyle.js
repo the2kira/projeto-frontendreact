@@ -16,11 +16,14 @@ height: 250px;`
 
 export const Informacoes = styled.div`
 padding: 5px;
-display: flex;
-flex-direction: column;
 background-color: white;
-button{
-    align-self: center;
+div{
+    display: flex;
+    justify-content: center;
+
+    button{
     width: 150px;
+    padding: 4px;
+    }
 }
 `
