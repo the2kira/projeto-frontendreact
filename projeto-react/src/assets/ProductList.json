@@ -3,25 +3,29 @@
   "id": 1,
   "name": "Item 1",
   "value": 355.0,
-  "imageUrl": "https://picsum.photos/300/335?a=1"
+  "imageUrl": "https://picsum.photos/300/335?a=1",
+  "amount": 0
 },
 {
   "id": 2,
   "name": "Item 2",
   "value": 575.75,
-  "imageUrl": "https://picsum.photos/300/335?a=2"
+  "imageUrl": "https://picsum.photos/300/335?a=2",
+  "amount": 0
 },
 {
   "id": 3,
   "name": "Item 3",
   "value": 200.0,
-  "imageUrl": "https://picsum.photos/300/335?a=3"
+  "imageUrl": "https://picsum.photos/300/335?a=3",
+  "amount": 0
 },
 {
   "id": 4,
   "name": "Item 4",
   "value": 120.0,
-  "imageUrl": "https://picsum.photos/300/335?a=4"
+  "imageUrl": "https://picsum.photos/300/335?a=4",
+  "amount": 0
 }
 
 ]

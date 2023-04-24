@@ -3,7 +3,7 @@ import { Produto, Img, Informacoes } from './ProductCardStyle'
 
 export function ProductCard(props) {
 
-	const { product } = props
+	const { product, adicionarAoCarrinho } = props
 
 	return (
 			<Produto>
@@ -12,7 +12,7 @@ export function ProductCard(props) {
 					<p>{product.name}</p>
 					<p>R${product.value}</p>
 					<div>
-					<button>Adicionar ao Carrinho</button>
+					<button onClick={()=>adicionarAoCarrinho(product)}>Adicionar ao Carrinho</button>
 					</div>
 				</Informacoes>
 			</Produto>

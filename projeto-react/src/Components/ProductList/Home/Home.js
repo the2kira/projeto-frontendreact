@@ -1,13 +1,13 @@
 import React from 'react'
 import { ProductCard } from '../ProductCard/ProductCard'
 import { Container1, Container2, DivPrincipal } from './HomeStyle'
-import ProductList from '../../../assets/ProductList.json'
+
 import { useState } from 'react'
 
 
 export function Home(props) {
 
-	const { amount, setAmount, cart, setCart } = props
+	const { amount, setAmount, cart, setCart, productList, adicionarAoCarrinho } = props
 
 	const Component = () => {
 		const [ordination, setOrdination] = useState("") 
@@ -30,7 +30,7 @@ export function Home(props) {
 	return <DivPrincipal>
 		<Container1>
 			<div>
-				<p>Quantidade de produtos: {ProductList.length}</p>
+				<p>Quantidade de produtos: {productList.length}</p>
 			</div>
 			<div>
 				<p>Ordenação: <Component/></p> 		
@@ -38,8 +38,11 @@ export function Home(props) {
 		</Container1>
 		<Container2>
 
-		{ProductList.map((product) => (
-			<ProductCard product={product} key={product.id}/>
+		{productList.map((product) => (
+			<ProductCard 
+			product={product} 
+			key={product.id}
+			adicionarAoCarrinho={adicionarAoCarrinho}/>
 		))}	
 
 		</Container2>
